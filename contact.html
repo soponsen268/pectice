@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(max-width:776px; ) {}
+    </style>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <section class="container my-5">
+        <div class="card m-auto w-75">
+            <h1 class="text-center">Contact Us</h1>
+            <form action="#" class="w-50 m-auto needs-validation" novalidate>
+                <div class="row ">
+                    <div class="col-md-4 text-center text-md-end
+                    pt-0 p-3">
+                        <label for="name">Your name</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input class="form-control" type="text" placeholder="Your name" required>
+                        <div class="valid-feedback">
+                            <p>looks goods</p>
+                        </div>
+                        <div class="invalid-feedback">
+                            <p>pleace ckeck</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-4 text-center text-md-end
+                    pt-0 p-3">
+                        <label for="name">Your Email</label>
+                    </div>
+                    <div class="col-md-8">
+                       <input class="form-control" type="email" placeholder="Your Email" required>
+                    <div class="valid-feedback">
+                        <p>looks goods</p>
+                    </div>
+                    <div class="invalid-feedback">
+                        <p>pleace ckeck</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-4 text-center text-md-end
+                    pt-0 p-3">
+                        <label for="name">Your password</label>
+                    </div>
+                    <div class="col-md-8">
+                         <input class="form-control" type="password" placeholder="Your password" required>
+                    <div class="valid-feedback">
+                        <p>looks goods</p>
+                    </div>
+                    <div class="invalid-feedback">
+                        <p>pleace ckeck</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="my-3 text-center">
+                    <input class="btn btn-success w-50 m-auto" type="submit" value="submit">
+
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+
+    <script src="lib/js/bootstrap.min.js"></script>
+</body>
+
+</html>
